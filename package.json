@@ -1,0 +1,30 @@
+{
+  "name": "image-clipper",
+  "version": "0.1.0",
+  "description": "js api providing image clip feature based on canvas",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rm -rf lib && babel src --out-dir lib && npm run build:demo",
+    "build:demo": "rm -rf build && babel demo --out-dir build && browserify build/index.js -o build/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leeching/image-clipper.git"
+  },
+  "keywords": [
+    "image",
+    "clip",
+    "canvas"
+  ],
+  "author": "leeching <417300981@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leeching/image-clipper/issues"
+  },
+  "homepage": "https://github.com/leeching/image-clipper#readme",
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0",
+    "browserify": "^13.0.0"
+  }
+}
